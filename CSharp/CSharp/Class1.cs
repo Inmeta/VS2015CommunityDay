@@ -6,20 +6,16 @@ using System.Threading.Tasks;
 
 namespace CSharp
 {
-    public class Properties
+    public class NewClass
     {
-
-        public Properties(int y)
+        public int X { get; set; } = 42;
+        public DateTime SomeDate { get; } = DateTime.Now;
+        public int Y { get; }
+        public IEnumerable<int> ListOfInts { get; } = new List<int>();
+        public NewClass(int y)
         {
             Y = y;
         }
-
-        public int X { get; set; } = 42;
-        public DateTime SomeDate { get; } = DateTime.Now;
-
-        public int Y { get; }
+        public string Information => "On \{SomeDate} there is \{ListOfInts.Count()} elements";
     }
-
-
-
 }
