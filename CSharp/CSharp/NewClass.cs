@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Math;
 
 namespace CSharp
 {
@@ -17,5 +18,8 @@ namespace CSharp
             Y = y;
         }
         public string Information => "On \{SomeDate} there is \{ListOfInts.Count()} elements";
+        
     }
+
+   
 }
