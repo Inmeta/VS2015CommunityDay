@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Angle.cs" />
     <Compile Include="NewClass.cs" />
+    <Compile Include="OldAngle.cs" />
     <Compile Include="OldClass.cs" />
     <Compile Include="ParameterlessStructConstructor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
