@@ -18,11 +18,16 @@ namespace CSharp
 
     public class Course
     {
-        public Teacher Teacher { get; }
+        public Teacher Teacher { get; private set; }
         public string Subject { get; }
         public Course(string subject, Teacher teacher)
         {
             Subject = subject;
+            Teacher = teacher;
+        }
+
+        public void ChangeTo(Teacher teacher)
+        {
             Teacher = teacher;
         }
     }
