@@ -25,6 +25,29 @@ namespace CSharp
         
     }
 
+
+    public class FlexibleTeacher : Teacher
+    {
+        public FlexibleTeacher(string name) : base(name)
+        {
+
+        }
+
+        public new int PaymentDue(int hours)
+        {
+            int factor = 1;
+            if (hours > 100)
+                factor = 10;
+            else if (hours > 20)
+                factor = 5;
+            else if (hours > 10)
+                factor = 2;
+            return base.PaymentDue(factor * hours);
+        }
+
+    }
+
+
     public class Course
     {
         public Teacher Teacher { get; private set; }
