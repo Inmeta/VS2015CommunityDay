@@ -12,7 +12,8 @@ namespace CSharp
         {
             [1] = "Arne",
             [2] = "Per",
-            [3] = "Mads"
+            [3] = "Mads",
+            [3] = "Tor"
         };
 
         public string FindByShortNumber(int no)
