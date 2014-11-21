@@ -40,10 +40,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Angle.cs" />
+    <Compile Include="Dictionary.cs" />
     <Compile Include="ExceptionProne.cs" />
     <Compile Include="NewClass.cs" />
     <Compile Include="OldAngle.cs" />
     <Compile Include="OldClass.cs" />
+    <Compile Include="OldDictionary.cs" />
     <Compile Include="ParameterlessStructConstructor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringLiterals.cs" />
