@@ -43,6 +43,7 @@
     <Compile Include="Angle.cs" />
     <Compile Include="Dictionary.cs" />
     <Compile Include="ExceptionProne.cs" />
+    <Compile Include="NameOf.cs" />
     <Compile Include="NewClass.cs" />
     <Compile Include="OldAngle.cs" />
     <Compile Include="OldClass.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="StringLiterals.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Nameof.md" />
     <None Include="ParameterlessConstructors.md" />
     <None Include="PrimaryConstructors.md" />
   </ItemGroup>
