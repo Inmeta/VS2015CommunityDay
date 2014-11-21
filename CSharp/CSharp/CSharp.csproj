@@ -48,9 +48,11 @@
     <Compile Include="OldAngle.cs" />
     <Compile Include="OldClass.cs" />
     <Compile Include="OldDictionary.cs" />
+    <Compile Include="NullProtection.cs" />
     <Compile Include="ParameterlessStructConstructor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringLiterals.cs" />
+    <Compile Include="Study.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Nameof.md" />

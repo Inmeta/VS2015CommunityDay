@@ -63,6 +63,7 @@
     <Compile Include="TestLiterals.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestNameOf.cs" />
+    <Compile Include="TestNullStuff.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
