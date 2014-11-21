@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestExceptions.cs" />
     <Compile Include="TestLiterals.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
