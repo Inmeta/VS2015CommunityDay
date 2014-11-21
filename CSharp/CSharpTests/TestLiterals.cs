@@ -12,7 +12,7 @@ namespace CSharpTests
     public class TestLiterals
     {
         [Test]
-        public void CheckBook()
+        public void CheckLiterals()
         {
             var book = new StringLiterals();
 
