@@ -23,6 +23,28 @@ namespace CSharp
     }
 
 
+    public class OldExceptionProne
+    {
+        public void SoWeAreCrashing(int x)
+        {
+            try
+            {
+                throw new WeirdException(x);
+            }
+            catch (WeirdException e) 
+            {
+                if (e.Topic >= 42)
+                {
+                    WriteLine("Boom");
+                }
+                else
+                    throw;
+            }
+        }
+    }
+
+
+
     [Serializable]
     public class WeirdException : Exception
     {
