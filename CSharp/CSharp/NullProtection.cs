@@ -8,24 +8,24 @@ namespace CSharp
 {
     public class CourseSetups
     {
-       
+
 
         public string GenerateCourseTitle(Course course)
         {
             if (course != null &&
                 course.Teacher != null &&
                 course.Subject != null &&
-                course.Teacher.Name!=null)
-                   return "Course \{course.Subject} taught by \{course.Teacher.Name}";
+                course.Teacher.Name != null)
+                return "Course \{course.Subject} taught by \{course.Teacher.Name}";
             return null;
         }
 
-       
+
 
 
         public string GenerateCourseTitleNew(Course course)
         {
-            var title =  "Course \{course?.Subject??" which is unknown"} taught by \{course?.Teacher?.Name ?? " no one we know"}";
+            var title = "Course \{course?.Subject ?? " which is unknown"} taught by \{course?.Teacher?.Name ?? " no one we know"}";
             return title;
         }
 
@@ -35,11 +35,21 @@ namespace CSharp
             something?.Dispose();
         }
 
-        public Course FixupAllThings(Teacher teacher,Course course)
+        public Course FixupAllThings(Teacher teacher, Course course)
         {
             course?.ChangeTo(teacher);
             return course;
         }
+
+
+        public bool VerifyTeacherInCourse(Teacher teacher, Course course)
+        {
+            bool status = teacher?.Name != course?.Teacher?.Name;
+            course?.VerifiedChangeTo(teacher);
+            return status;
+        }
+
+
 
 
     }
@@ -85,5 +95,5 @@ namespace CSharp
     }
 
 
-   
+
 }

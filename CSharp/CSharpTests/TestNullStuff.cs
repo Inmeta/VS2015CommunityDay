@@ -88,5 +88,24 @@ namespace CSharpTests
 
         }
 
+
+        [Test]
+        public void CheckChangingTeacherVerified()
+        {
+            var sut = new CourseSetups();
+
+            var teacher = new Teacher("Einar");
+
+            var course = new Course("ASP.NET 5", null);
+            sut.VerifyTeacherInCourse(teacher, course);
+            Assert.That(course.Teacher.Name == "Einar");
+
+            var teacher2 = new Teacher("Lars");
+            sut.VerifyTeacherInCourse(teacher2, course);
+            Assert.That(course.Teacher.Name == "Lars");
+
+
+        }
+
     }
 }

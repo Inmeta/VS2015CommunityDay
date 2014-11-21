@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CSharp
@@ -28,6 +29,16 @@ namespace CSharp
 
         public void ChangeTo(Teacher teacher)
         {
+            Teacher = teacher;
+        }
+
+        public void VerifiedChangeTo(Teacher teacher)
+        {
+            if (Teacher!=null)
+            {
+                Thread.Sleep(2000);
+                
+            }
             Teacher = teacher;
         }
     }
