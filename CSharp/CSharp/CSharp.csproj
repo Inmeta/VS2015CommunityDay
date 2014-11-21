@@ -50,11 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ParameterlessConstructors.md" />
+    <None Include="PrimaryConstructors.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\plc-1.png" />
     <Content Include="images\plc-2.png" />
     <Content Include="images\plc-3.png" />
+    <Content Include="images\primctor-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
