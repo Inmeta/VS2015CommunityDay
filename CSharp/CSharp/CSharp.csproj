@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Angle.cs" />
+    <Compile Include="DeclarationExpressions.cs" />
     <Compile Include="Dictionary.cs" />
     <Compile Include="ExceptionProne.cs" />
     <Compile Include="NewClass.cs" />
