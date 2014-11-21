@@ -55,6 +55,7 @@
     <Compile Include="Study.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="debugger.md" />
     <None Include="Nameof.md" />
     <None Include="ParameterlessConstructors.md" />
     <None Include="PrimaryConstructors.md" />

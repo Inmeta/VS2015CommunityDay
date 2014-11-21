@@ -15,16 +15,27 @@ namespace CSharp
         {
             Name = name;
         }
+
+        public virtual int HourlyRate { get; } = 1;
+
+        public int PaymentDue(int hours)
+        {
+            return hours * HourlyRate;
+        }
+        
     }
 
     public class Course
     {
         public Teacher Teacher { get; private set; }
         public string Subject { get; }
-        public Course(string subject, Teacher teacher)
+
+        public int Hours { get; }
+        public Course(string subject, int hours, Teacher teacher)
         {
             Subject = subject;
             Teacher = teacher;
+            Hours = hours;
         }
 
         public void ChangeTo(Teacher teacher)
@@ -41,5 +52,22 @@ namespace CSharp
             }
             Teacher = teacher;
         }
+
+        public int Due()
+        {
+            return Hours * Teacher.HourlyRate;
+        }
+
+    }
+
+
+    public class SpecialTeacher : Teacher
+    {
+        public override int HourlyRate { get; } = 50;
+
+        public SpecialTeacher(string name) : base(name)
+        {
+
+        }  
     }
 }

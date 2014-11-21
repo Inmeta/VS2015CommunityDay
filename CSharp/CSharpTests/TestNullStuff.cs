@@ -16,11 +16,11 @@ namespace CSharpTests
         public void SetupCourse()
         {
             var teacher = new Teacher("Martin");
-            var course = new Course("ALM", teacher);
+            var course = new Course("ALM",1, teacher);
             Courses.Add(course);
-            Courses.Add(new Course("Driving", null));
+            Courses.Add(new Course("Driving",1, null));
             var teacher2 = new Teacher(null);
-            Courses.Add(new Course("Walking", teacher2));
+            Courses.Add(new Course("Walking",1, teacher2));
             Courses.Add(null);
         }
 
@@ -77,7 +77,7 @@ namespace CSharpTests
 
             var teacher = new Teacher("Einar");
 
-            var course = new Course("ASP.NET 5",null);
+            var course = new Course("ASP.NET 5",1,null);
 
             course = sut.FixupAllThings(teacher, course);
             Assert.That(course.Teacher.Name == "Einar");
@@ -96,7 +96,7 @@ namespace CSharpTests
 
             var teacher = new Teacher("Einar");
 
-            var course = new Course("ASP.NET 5", null);
+            var course = new Course("ASP.NET 5",1, null);
             sut.VerifyTeacherInCourse(teacher, course);
             Assert.That(course.Teacher.Name == "Einar");
 
