@@ -38,7 +38,7 @@ namespace CSharpTests
             {
                 cost += course.Due();
             }
-            // Assert.That(cost, Is.AtMost(100),"This is far beyond our budgets!");
+            Assert.That(cost, Is.AtMost(100),"This is far beyond our budgets!");
         }
     }
 }
