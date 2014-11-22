@@ -45,6 +45,7 @@
     <Compile Include="2-Using-ExpressionBodies\CustomerCollection.cs" />
     <Compile Include="2-Using-ExpressionBodies\Triangle.cs" />
     <Compile Include="2-Using-ExpressionBodies\TriangleEx.cs" />
+    <Compile Include="7-Dictionary\ComplexDictionary.cs" />
     <Compile Include="7-Dictionary\Dictionary.cs" />
     <Compile Include="5-Exceptions\ExceptionProne.cs" />
     <Compile Include="6-Nameof\NameOf.cs" />
