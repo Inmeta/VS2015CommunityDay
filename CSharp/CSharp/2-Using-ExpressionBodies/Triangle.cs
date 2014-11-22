@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Math;
+﻿using System.Math;
 
 namespace CSharp
 {
-    public class Angle
+    public partial class Triangle
     {
         public double X { get; }
         public double Y { get; }
 
-        public Angle(double x, double y)
+        public Triangle(double x, double y)
         {
             X = x;
             Y = y;

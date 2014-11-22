@@ -9,8 +9,10 @@ namespace CSharp
     public class CourseSetups
     {
 
-
-        public string GenerateCourseTitle(Course course)
+        /// <summary>
+        /// The old way of protecting agains nulls
+        /// </summary>
+       public string GenerateCourseTitle(Course course)
         {
             if (course != null &&
                 course.Teacher != null &&
@@ -22,7 +24,9 @@ namespace CSharp
 
 
 
-
+        /// <summary>
+        /// The new way of protecting against nulls
+        /// </summary>
         public string GenerateCourseTitleNew(Course course)
         {
             var title = "Course \{course?.Subject ?? " which is unknown"} taught by \{course?.Teacher?.Name ?? " no one we know"}";

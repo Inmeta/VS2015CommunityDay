@@ -12,7 +12,7 @@ namespace CSharp
         public int X { get; set; } = 42;
         public DateTime SomeDate { get; } = DateTime.Now;
         public int Y { get; }
-        public IEnumerable<int> ListOfInts { get; } = new List<int>();
+        public IEnumerable<int> ListOfInts { get; } = new List<int> { 2, 3, 4, 5, 6 };
         public NewClass(int y)
         {
             Y = y;

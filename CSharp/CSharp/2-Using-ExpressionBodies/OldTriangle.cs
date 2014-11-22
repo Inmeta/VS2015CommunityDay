@@ -1,18 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 namespace CSharp
 {
-    public class OldAngle
+    public partial class OldTriangle
     {
         public double X { get; private set; }
         public double Y { get; private set; }
 
-        public OldAngle(double x, double y)
+        public OldTriangle(double x, double y)
         {
             X = x;
             Y = y;

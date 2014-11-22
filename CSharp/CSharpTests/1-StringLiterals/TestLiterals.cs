@@ -8,6 +8,7 @@ using CSharp;
 
 namespace CSharpTests
 {
+    [StringLiterals]
     [TestFixture]
     public class TestLiterals
     {
@@ -22,4 +23,7 @@ namespace CSharpTests
             Assert.That(res.Contains("42"),"Interpolation doesn't work yet");
         }
     }
+
+    public class StringLiteralsAttribute : CategoryAttribute
+    {    }
 }
