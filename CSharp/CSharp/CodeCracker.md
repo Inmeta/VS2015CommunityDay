@@ -4,7 +4,7 @@
 
 [Github.io](http://code-cracker.github.io/)
 
-
+[Nuget](http://www.nuget.org/packages/codecracker/)
 
 ###Install using Package manager
 
