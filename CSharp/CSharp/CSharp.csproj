@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Angle.cs" />
+    <Compile Include="CodeWithIssues.cs" />
     <Compile Include="Dictionary.cs" />
     <Compile Include="ExceptionProne.cs" />
     <Compile Include="NameOf.cs" />
@@ -57,8 +58,10 @@
     <Compile Include="Study.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CodeCracker.md" />
     <None Include="debugger.md" />
     <None Include="Nameof.md" />
+    <None Include="packages.config" />
     <None Include="ParameterlessConstructors.md" />
     <None Include="PrimaryConstructors.md" />
   </ItemGroup>
@@ -67,6 +70,9 @@
     <Content Include="images\plc-2.png" />
     <Content Include="images\plc-3.png" />
     <Content Include="images\primctor-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\codecracker.1.0.0-alpha1\tools\analyzers\CodeCracker.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
