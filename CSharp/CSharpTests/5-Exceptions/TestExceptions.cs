@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpTests
 {
+    [ExceptionFiltering]
     [TestFixture]
     public class TestExceptions
     {
@@ -32,4 +33,7 @@ namespace CSharpTests
         }
 
     }
+
+    public class ExceptionFilteringAttribute : CategoryAttribute
+    { }
 }

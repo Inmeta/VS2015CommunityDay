@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace CSharpTests
 {
+    [Debugging]
     [TestFixture]
     public class CheckCoursesPayments
     {
@@ -41,4 +42,8 @@ namespace CSharpTests
             Assert.That(cost, Is.AtMost(1200),"This is far beyond our budgets!");
         }
     }
+
+    public class DebuggingAttribute : CategoryAttribute
+    { }
+
 }

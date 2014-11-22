@@ -8,6 +8,7 @@ using CSharp;
 
 namespace CSharpTests
 {
+    [Nullables]
     [TestFixture]
     public class TestNullStuff
     {
@@ -108,4 +109,8 @@ namespace CSharpTests
         }
 
     }
+
+
+    public class NullablesAttribute : CategoryAttribute
+    { }
 }

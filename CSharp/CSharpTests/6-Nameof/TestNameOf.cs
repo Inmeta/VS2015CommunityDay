@@ -7,6 +7,7 @@ using NUnit.Framework;
 
 namespace CSharpTests
 {
+    [Nameof]
     [TestFixture]
     public class TestNameOf
     {
@@ -19,4 +20,8 @@ namespace CSharpTests
         }
 
     }
+
+    public class NameofAttribute : CategoryAttribute
+    { }
+
 }

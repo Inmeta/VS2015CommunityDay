@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp
 {
@@ -16,7 +14,7 @@ namespace CSharp
         {
             X = 42;
             Y = y;
-            ListOfInts = new List<int>();
+            ListOfInts = new List<int> { 2, 3, 4, 5, 6 };
             SomeDate = DateTime.Now;
         }
         public string Information
