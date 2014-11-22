@@ -78,7 +78,7 @@ namespace CSharp
 
         public int Due()
         {
-            return Hours * Teacher.HourlyRate;
+            return Teacher.PaymentDue(Hours);
         }
 
     }
