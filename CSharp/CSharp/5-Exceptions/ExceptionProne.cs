@@ -7,6 +7,29 @@ using System.Console;
 
 namespace CSharp
 {
+
+
+    public class OldExceptionProne
+    {
+        public void SoWeAreCrashing(int x)
+        {
+            try
+            {
+                throw new WeirdException(x);
+            }
+            catch (WeirdException e)
+            {
+                if (e.Topic >= 42)
+                {
+                    WriteLine("Boom");
+                }
+                else
+                    throw;
+            }
+        }
+    }
+
+
     public class ExceptionProne
     {
         public void SoWeAreCrashing(int x)
@@ -23,25 +46,7 @@ namespace CSharp
     }
 
 
-    public class OldExceptionProne
-    {
-        public void SoWeAreCrashing(int x)
-        {
-            try
-            {
-                throw new WeirdException(x);
-            }
-            catch (WeirdException e) 
-            {
-                if (e.Topic >= 42)
-                {
-                    WriteLine("Boom");
-                }
-                else
-                    throw;
-            }
-        }
-    }
+    
 
 
 

@@ -11,25 +11,18 @@ namespace CSharpTests
     [TestFixture]
     public class TestExceptions
     {
+        CSharp.ExceptionProne sut = new CSharp.ExceptionProne();
+        
         [Test]
         public void CheckExceptionIsCatched()
         {
-            var sut = new CSharp.ExceptionProne();
-
-            sut.SoWeAreCrashing(42);
-
-            Assert.IsTrue(true);
+            Assert.DoesNotThrow(()=> sut.SoWeAreCrashing(42));
         }
 
-        [ExpectedException(typeof(CSharp.WeirdException))]
         [Test]
         public void CheckExceptionIsNotCatched()
         {
-            var sut = new CSharp.ExceptionProne();
-
-            sut.SoWeAreCrashing(0);
-
-            Assert.IsTrue(true);
+           Assert.Throws<CSharp.WeirdException>(()=> sut.SoWeAreCrashing(0));
         }
 
     }

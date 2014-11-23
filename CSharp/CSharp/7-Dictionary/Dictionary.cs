@@ -8,7 +8,7 @@ namespace CSharp
 {
     public class NewDictionary
     {
-        Dictionary<int,string> Catalog { get; } = new Dictionary<int, string>()
+        public Dictionary<int,string> Catalog { get; } = new Dictionary<int, string>
         {
             [1] = "Arne",
             [2] = "Per",

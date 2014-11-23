@@ -10,9 +10,7 @@ namespace CSharp._7_Dictionary
     public class ComplexDictionary
     {
 
-        Dictionary<int, Customer> Catalog
-        { get; }
-        = new Dictionary<int, Customer>()
+        Dictionary<int, Customer> Catalog { get; }  = new Dictionary<int, Customer>()
         {
             [1] = new Customer("Arne",1),
             [2] = new Customer("Per",2),

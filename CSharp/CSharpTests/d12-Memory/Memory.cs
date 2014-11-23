@@ -21,6 +21,7 @@ namespace CSharpTests.d12_Memory
         }
     }
 
+    [Explicit]
     [Memory]
     [TestFixture]
     public class TestMemory

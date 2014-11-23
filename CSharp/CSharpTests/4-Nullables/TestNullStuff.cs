@@ -14,14 +14,16 @@ namespace CSharpTests
     {
 
         public List<Course> Courses { get; } = new List<Course>();
+        CourseSetups courseManager;
+
+        [SetUp]
         public void SetupCourse()
         {
-            var teacher = new Teacher("Martin");
-            var course = new Course("ALM",1, teacher);
-            Courses.Add(course);
+            courseManager = new CourseSetups();
+
+            Courses.Add(new Course("ALM", 1, new Teacher("Martin")));
             Courses.Add(new Course("Driving",1, null));
-            var teacher2 = new Teacher(null);
-            Courses.Add(new Course("Walking",1, teacher2));
+            Courses.Add(new Course("Walking",1, new Teacher(null)));
             Courses.Add(null);
         }
 
@@ -31,13 +33,11 @@ namespace CSharpTests
         [TestCase(3,false)]
         public void CheckNullOldWay(int coursenumber,bool ok)
         {
-            SetupCourse();
-            var sut = new CourseSetups();
-
+            
             bool res = false;
             var course = Courses[coursenumber];
             if (course!=null)
-                res = sut.GenerateCourseTitle(course)!=null;
+                res = courseManager.GenerateCourseTitle(course)!=null;
 
             Assert.IsTrue(res==ok);
 
@@ -50,10 +50,8 @@ namespace CSharpTests
         [TestCase(3, true)]
         public void CheckNullNewWay(int coursenumber,bool ok)
         {
-            var sut = new CourseSetups();
-            SetupCourse();
             var course = Courses[coursenumber];
-            bool res = sut.GenerateCourseTitleNew(course)!=null;
+            bool res = courseManager.GenerateCourseTitleNew(course)!=null;
             Assert.IsTrue(res==ok);
                        
         }
@@ -61,11 +59,10 @@ namespace CSharpTests
         [Test]
         public void CheckDispose()
         {
-            var sut = new CourseSetups();
             var disp = new SomeDisposableClass();
-            sut.LetsHandleDisposableClasses(disp);
+            courseManager.LetsHandleDisposableClasses(disp);
 
-            sut.LetsHandleDisposableClasses(null);
+            courseManager.LetsHandleDisposableClasses(null);
 
             Assert.IsTrue(true);
 
@@ -74,16 +71,15 @@ namespace CSharpTests
         [Test]
         public void CheckChangingTeacher()
         {
-            var sut = new CourseSetups();
-
+            
             var teacher = new Teacher("Einar");
 
             var course = new Course("ASP.NET 5",1,null);
 
-            course = sut.FixupAllThings(teacher, course);
+            course = courseManager.ChangeTeacherOnGivenCourse(teacher, course);
             Assert.That(course.Teacher.Name == "Einar");
 
-            course = sut.FixupAllThings(teacher, null);
+            course = courseManager.ChangeTeacherOnGivenCourse(teacher, null);
             Assert.That(course==null);
 
 
@@ -93,16 +89,14 @@ namespace CSharpTests
         [Test]
         public void CheckChangingTeacherVerified()
         {
-            var sut = new CourseSetups();
-
             var teacher = new Teacher("Einar");
 
             var course = new Course("ASP.NET 5",1, null);
-            sut.VerifyTeacherInCourse(teacher, course);
+            courseManager.VerifyTeacherInCourse(teacher, course);
             Assert.That(course.Teacher.Name == "Einar");
 
             var teacher2 = new Teacher("Lars");
-            sut.VerifyTeacherInCourse(teacher2, course);
+            courseManager.VerifyTeacherInCourse(teacher2, course);
             Assert.That(course.Teacher.Name == "Lars");
 
 

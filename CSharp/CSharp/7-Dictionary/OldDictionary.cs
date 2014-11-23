@@ -8,18 +8,21 @@ namespace CSharp
 {
     public class OldDictionary
     {
-        Dictionary<int,string> Catalog { get; } = new Dictionary<int, string>()
-        {
-            {1,"Arne"},
-            {2,"Per" },
-            {3,"Mads" }
-        };
+        public Dictionary<int, string> Catalog { get; private set; }
 
         public string FindByShortNumber(int no)
         {
             return Catalog[no];
         }
-        
 
+        public OldDictionary()
+        {
+            Catalog = new Dictionary<int, string>
+                {
+                    {1,"Arne"},
+                    {2,"Per" },
+                    {3,"Mads" }
+                };
+        }
     }
 }

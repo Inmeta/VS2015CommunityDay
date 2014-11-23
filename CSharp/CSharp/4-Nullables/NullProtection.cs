@@ -39,7 +39,7 @@ namespace CSharp
             something?.Dispose();
         }
 
-        public Course FixupAllThings(Teacher teacher, Course course)
+        public Course ChangeTeacherOnGivenCourse(Teacher teacher, Course course)
         {
             course?.ChangeTo(teacher);
             return course;
