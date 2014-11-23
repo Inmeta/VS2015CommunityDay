@@ -27,7 +27,7 @@ namespace CSharp
         /// <summary>
         /// The new way of protecting against nulls
         /// </summary>
-        public static string GenerateCourseTitleNew(Course course)
+        public string GenerateCourseTitleNew(Course course)
         {
             var title = "Course \{course?.Subject ?? " which is unknown"} taught by \{course?.Teacher?.Name ?? " no one we know"}";
             return title;

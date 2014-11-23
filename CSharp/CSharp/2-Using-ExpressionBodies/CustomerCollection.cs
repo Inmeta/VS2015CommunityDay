@@ -13,9 +13,7 @@ namespace CSharp._2_Using_ExpressionBodies
         {
             TheStore = store;
         }
-        List<Customer> Customers { get; } = new List<Customer>();
-
-
+        
         public Customer this[int id] => TheStore.FindCustomer(id);
 
     }

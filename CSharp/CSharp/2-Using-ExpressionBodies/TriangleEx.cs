@@ -12,7 +12,7 @@ namespace CSharp
     /// </summary>
     public partial class Triangle
     {
-        public Triangle Change(Triangle d) => new Triangle(d.X + X, d.Y + Y);
+        public Triangle Change(Triangle d) => Change(d.X + X, d.Y + Y);
         public Triangle Change(double dx, double dy) => new Triangle(X + dx, Y + dy);
 
         public static Triangle operator+(Triangle a, Triangle b) => a.Change(b);

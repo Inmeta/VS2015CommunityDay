@@ -20,7 +20,10 @@ namespace CSharpTests
             var res = book.WhatIsTheMessage;
 
             Assert.That(res.Length, Is.GreaterThan(19));
-            Assert.That(res.Contains("42"),"Interpolation doesn't work yet");
+            Assert.That(res.Contains("42"), "Interpolation doesn't work yet");
+            Assert.That(res.Contains("Douglas"), "Interpolation doesn't work yet");
+            Assert.That(res.Contains("Adams"), "Interpolation doesn't work yet");
+            Assert.That(res.Contains("galaxy"), "Interpolation doesn't work yet");
         }
     }
 

@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="1-AutoPropertyInitializers-StringLiterals\StringLiterals.md" />
+    <None Include="2-Using-ExpressionBodies\ExpressionBodies.md" />
     <None Include="d10-Debugging\debugger.md" />
     <None Include="6-Nameof\Nameof.md" />
     <None Include="3-Structs\ParameterlessConstructors.md" />
