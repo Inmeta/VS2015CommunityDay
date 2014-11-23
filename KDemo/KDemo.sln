@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{38D03F50-472F-46CD-A6E5-FF78A9C67102}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "KDemo", "src\KDemo\KDemo.kproj", "{484973FF-2D0B-46D8-9E6D-AA2AAB48AE69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{391B3EC2-F5EA-444F-A067-3E21962A48CA}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Test", "src\Test\Test.kproj", "{DCC1EE59-73B5-4548-84D8-2CC28314E31E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F0E5E290-B79B-4735-BDDF-33C7D9196248}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{484973FF-2D0B-46D8-9E6D-AA2AAB48AE69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484973FF-2D0B-46D8-9E6D-AA2AAB48AE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484973FF-2D0B-46D8-9E6D-AA2AAB48AE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484973FF-2D0B-46D8-9E6D-AA2AAB48AE69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC1EE59-73B5-4548-84D8-2CC28314E31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC1EE59-73B5-4548-84D8-2CC28314E31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC1EE59-73B5-4548-84D8-2CC28314E31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC1EE59-73B5-4548-84D8-2CC28314E31E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{484973FF-2D0B-46D8-9E6D-AA2AAB48AE69} = {38D03F50-472F-46CD-A6E5-FF78A9C67102}
+		{DCC1EE59-73B5-4548-84D8-2CC28314E31E} = {F0E5E290-B79B-4735-BDDF-33C7D9196248}
+	EndGlobalSection
+EndGlobal
