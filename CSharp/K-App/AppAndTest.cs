@@ -17,6 +17,7 @@ namespace K_App
 
     public class TestApp
     {
+        [Trait("Category","KUnitTest")]
         [Fact]
         public void KCheckAdd()
         {

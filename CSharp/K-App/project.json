@@ -2,7 +2,10 @@
     "version": "1.0.0-*",
     "dependencies": {
         "K-1-Library": "1.0.0.0",
-"Xunit.KRunner": "1.0.0.0-beta2-10573"
+        "Xunit.KRunner": "1.0.0.0-beta2-10573"
+    },
+    "commands": {
+        "test": "Xunit.KRunner"
     },
 
     "frameworks": {
