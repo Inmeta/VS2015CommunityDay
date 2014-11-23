@@ -1,4 +1,5 @@
 ﻿using System;
+using Xunit;
 
 namespace K_App
 {
@@ -8,5 +9,27 @@ namespace K_App
         {
 
         }
+
+        public int Add(int x, int y) => x + y;
+
     }
+
+
+    public class TestApp
+    {
+        [Fact]
+        public void KCheckAdd()
+        {
+
+            var app = new Application();
+
+            var res = app.Add(2, 2);
+
+            Assert.True(res==4);
+
+        }
+
+    }
+
+
 }
