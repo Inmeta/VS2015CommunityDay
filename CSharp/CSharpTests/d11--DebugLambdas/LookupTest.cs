@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpTests.d11__DebugLambdas
 {
+    [DebugLambda]
     [TestFixture]
     public class LookupTest
     {
@@ -27,6 +28,8 @@ namespace CSharpTests.d11__DebugLambdas
         }
     }
 
+    public class DebugLambdaAttribute : CategoryAttribute
+    { }
 
 
 
