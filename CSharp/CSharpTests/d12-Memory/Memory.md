@@ -11,3 +11,7 @@ Set Value to 1
 
 (Reset VS to enable)
 
+[Native memory diagnostics](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)
+
+
+
