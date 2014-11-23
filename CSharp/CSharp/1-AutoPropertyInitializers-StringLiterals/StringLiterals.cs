@@ -20,8 +20,8 @@ namespace CSharp
     public class StringLiterals
     {
 
-        const int Answer = 42;
-        const string FirstName = "Douglas";
+        int answer = 42;
+        string FirstName { get; } = "Douglas";
         const string LastName = "Adams";
 
         TheBook Book = new TheBook();
@@ -31,7 +31,7 @@ namespace CSharp
 
         public StringLiterals()
         {
-            WhatIsTheMessage = "The answer to it all is \{Answer}, coined by \{FirstName} \{LastName} in his book \{Book.Title}";
+            WhatIsTheMessage = "The answer to it all is \{answer}, coined by \{FirstName} \{LastName} in his book \{Book.Title}";
             AndWhen = "Said the \{DateTime.Now : dd}st of the month \{DateTime.Now : MMMM} ";
         }
     }
