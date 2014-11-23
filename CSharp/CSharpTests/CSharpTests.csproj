@@ -59,6 +59,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="d11--DebugLambdas\Collection.cs" />
+    <Compile Include="d11--DebugLambdas\LookupTest.cs" />
     <Compile Include="d10-Debugging-SmartUnitTest\CheckPayment.cs" />
     <Compile Include="5-Exceptions\TestExceptions.cs" />
     <Compile Include="1-StringLiterals\TestLiterals.cs" />
