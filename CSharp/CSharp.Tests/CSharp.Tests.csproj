@@ -50,13 +50,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\CourseFactory.cs" />
     <Compile Include="Factories\FlexibleTeacherFactory.cs" />
     <Compile Include="Factories\TeacherFactory.cs" />
     <Compile Include="FlexibleTeacherTest.cs" />
     <Compile Include="FlexibleTeacherTest.PaymentDue.g.cs">
       <DependentUpon>FlexibleTeacherTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="FlexibleTeacherTest2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\PexAssemblyInfo.cs" />
   </ItemGroup>
