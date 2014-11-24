@@ -13,3 +13,8 @@ It just works !
 
 [Support for debugging lambdas](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/support-for-debugging-lambda-expressions-with-visual-studio-2015.aspx)
 
+In order to enable Live Memory Profiling:
+
+    [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0_Config\FeatureFlags\DiagnosticsHub\PerformanceDebuggerEnabled]
+    "Value"=dword:00000001
+
