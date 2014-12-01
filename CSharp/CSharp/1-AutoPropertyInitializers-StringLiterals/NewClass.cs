@@ -16,6 +16,14 @@ namespace CSharp
         }
         public string Information => "On \{SomeDate} there is \{ListOfInts.Count()} elements";
         
+        public int DoSOmething()
+        {
+            X = 43;
+           
+            return 42;
+        }
+
+
     }
 
    
