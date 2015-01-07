@@ -44,6 +44,8 @@ namespace CSharp
 
         public void ChangeTo(Teacher teacher)
         {
+            if (teacher==null)
+                throw new Exception();
             Teacher = teacher;
         }
 
