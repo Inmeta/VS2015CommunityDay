@@ -16,55 +16,125 @@ namespace CSharp
     {
 [TestMethod]
 [PexGeneratedBy(typeof(FlexibleTeacherTest))]
-public void PaymentDue701()
+[ExpectedException(typeof(AssertFailedException))]
+public void PaymentDueThrowsAssertFailedException72801()
 {
     FlexibleTeacher flexibleTeacher;
     int i;
     flexibleTeacher = FlexibleTeacherFactory.Create((string)null);
     i = this.PaymentDue(flexibleTeacher, 0);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(FlexibleTeacherTest))]
+[ExpectedException(typeof(AssertFailedException))]
+public void PaymentDueThrowsAssertFailedException612()
+{
+    FlexibleTeacher flexibleTeacher;
+    int i;
+    flexibleTeacher = FlexibleTeacherFactory.Create("");
+    i = this.PaymentDue(flexibleTeacher, 0);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(FlexibleTeacherTest))]
+[ExpectedException(typeof(AssertFailedException))]
+public void PaymentDueThrowsAssertFailedException485()
+{
+    FlexibleTeacher flexibleTeacher;
+    int i;
+    flexibleTeacher = FlexibleTeacherFactory.Create("\0");
+    i = this.PaymentDue(flexibleTeacher, 0);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(FlexibleTeacherTest))]
+public void PaymentDue626()
+{
+    FlexibleTeacher flexibleTeacher;
+    int i;
+    flexibleTeacher = FlexibleTeacherFactory.Create("\0\n\n\0");
+    i = this.PaymentDue(flexibleTeacher, 0);
     Assert.AreEqual<int>(0, i);
     Assert.IsNotNull((object)flexibleTeacher);
-    Assert.AreEqual<string>((string)null, ((Teacher)flexibleTeacher).Name);
+    Assert.AreEqual<string>("\0\n\n\0", ((Teacher)flexibleTeacher).Name);
     Assert.AreEqual<int>(1, ((Teacher)flexibleTeacher).HourlyRate);
 }
 [TestMethod]
 [PexGeneratedBy(typeof(FlexibleTeacherTest))]
-public void PaymentDue106()
+public void PaymentDue861()
 {
     FlexibleTeacher flexibleTeacher;
     int i;
-    flexibleTeacher = FlexibleTeacherFactory.Create((string)null);
-    i = this.PaymentDue(flexibleTeacher, 20);
-    Assert.AreEqual<int>(40, i);
-    Assert.IsNotNull((object)flexibleTeacher);
-    Assert.AreEqual<string>((string)null, ((Teacher)flexibleTeacher).Name);
-    Assert.AreEqual<int>(1, ((Teacher)flexibleTeacher).HourlyRate);
-}
-[TestMethod]
-[PexGeneratedBy(typeof(FlexibleTeacherTest))]
-public void PaymentDue21()
-{
-    FlexibleTeacher flexibleTeacher;
-    int i;
-    flexibleTeacher = FlexibleTeacherFactory.Create((string)null);
-    i = this.PaymentDue(flexibleTeacher, 101);
-    Assert.AreEqual<int>(1010, i);
-    Assert.IsNotNull((object)flexibleTeacher);
-    Assert.AreEqual<string>((string)null, ((Teacher)flexibleTeacher).Name);
-    Assert.AreEqual<int>(1, ((Teacher)flexibleTeacher).HourlyRate);
-}
-[TestMethod]
-[PexGeneratedBy(typeof(FlexibleTeacherTest))]
-public void PaymentDue731()
-{
-    FlexibleTeacher flexibleTeacher;
-    int i;
-    flexibleTeacher = FlexibleTeacherFactory.Create((string)null);
+    flexibleTeacher = FlexibleTeacherFactory.Create("\0\n\n\0");
     i = this.PaymentDue(flexibleTeacher, 36);
     Assert.AreEqual<int>(180, i);
     Assert.IsNotNull((object)flexibleTeacher);
-    Assert.AreEqual<string>((string)null, ((Teacher)flexibleTeacher).Name);
+    Assert.AreEqual<string>("\0\n\n\0", ((Teacher)flexibleTeacher).Name);
     Assert.AreEqual<int>(1, ((Teacher)flexibleTeacher).HourlyRate);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(FlexibleTeacherTest))]
+public void PaymentDue194()
+{
+    FlexibleTeacher flexibleTeacher;
+    int i;
+    flexibleTeacher = FlexibleTeacherFactory.Create("\0\n\n\0");
+    i = this.PaymentDue(flexibleTeacher, 20);
+    Assert.AreEqual<int>(40, i);
+    Assert.IsNotNull((object)flexibleTeacher);
+    Assert.AreEqual<string>("\0\n\n\0", ((Teacher)flexibleTeacher).Name);
+    Assert.AreEqual<int>(1, ((Teacher)flexibleTeacher).HourlyRate);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(FlexibleTeacherTest))]
+public void PaymentDue702()
+{
+    FlexibleTeacher flexibleTeacher;
+    int i;
+    flexibleTeacher = FlexibleTeacherFactory.Create("\0\n\n\0");
+    i = this.PaymentDue(flexibleTeacher, 101);
+    Assert.AreEqual<int>(1010, i);
+    Assert.IsNotNull((object)flexibleTeacher);
+    Assert.AreEqual<string>("\0\n\n\0", ((Teacher)flexibleTeacher).Name);
+    Assert.AreEqual<int>(1, ((Teacher)flexibleTeacher).HourlyRate);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(FlexibleTeacherTest))]
+[ExpectedException(typeof(AssertFailedException))]
+public void PaymentDueThrowsAssertFailedException707()
+{
+    FlexibleTeacher flexibleTeacher;
+    int i;
+    flexibleTeacher = FlexibleTeacherFactory.Create("\n");
+    i = this.PaymentDue(flexibleTeacher, 0);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(FlexibleTeacherTest))]
+[ExpectedException(typeof(AssertFailedException))]
+public void PaymentDueThrowsAssertFailedException522()
+{
+    FlexibleTeacher flexibleTeacher;
+    int i;
+    flexibleTeacher = FlexibleTeacherFactory.Create("\0\n");
+    i = this.PaymentDue(flexibleTeacher, 0);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(FlexibleTeacherTest))]
+[ExpectedException(typeof(AssertFailedException))]
+public void PaymentDueThrowsAssertFailedException493()
+{
+    FlexibleTeacher flexibleTeacher;
+    int i;
+    flexibleTeacher = FlexibleTeacherFactory.Create("\0\n\n");
+    i = this.PaymentDue(flexibleTeacher, 0);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(FlexibleTeacherTest))]
+[ExpectedException(typeof(AssertFailedException))]
+public void PaymentDueThrowsAssertFailedException295()
+{
+    FlexibleTeacher flexibleTeacher;
+    int i;
+    flexibleTeacher = FlexibleTeacherFactory.Create("\n\n");
+    i = this.PaymentDue(flexibleTeacher, 0);
 }
     }
 }
