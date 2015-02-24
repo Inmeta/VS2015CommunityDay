@@ -18,7 +18,7 @@ namespace CSharp
                 course.Teacher != null &&
                 course.Subject != null &&
                 course.Teacher.Name != null)
-                return "Course \{course.Subject} taught by \{course.Teacher.Name}";
+                return "Course {course.Subject} taught by {course.Teacher.Name}";
             return null;
         }
 
@@ -29,7 +29,7 @@ namespace CSharp
         /// </summary>
         public string GenerateCourseTitleNew(Course course)
         {
-            var title = "Course \{course?.Subject ?? " which is unknown"} taught by \{course?.Teacher?.Name ?? " no one we know"}";
+	        var title = $"Course {course?.Subject ?? " which is unknown"} taught by {course?.Teacher?.Name ?? " no one we know"}";
             return title;
         }
 

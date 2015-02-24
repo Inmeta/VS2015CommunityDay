@@ -13,7 +13,7 @@ namespace CSharp
         {
             if (message == null)
             {
-                var s = "Parameter \{nameof(message)} of method \{nameof(WhenWeCanUseIt)} in class \{typeof(NameOfParameter)} is null";
+                var s = $"Parameter {nameof(message)} of method {nameof(WhenWeCanUseIt)} in class {typeof(NameOfParameter)} is null";
                 throw new ArgumentNullException(s);
             }
         }

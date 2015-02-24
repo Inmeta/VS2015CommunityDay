@@ -1,4 +1,5 @@
-﻿using System.Math;
+﻿using System;
+using static System.Math;
 
 namespace CSharp
 {

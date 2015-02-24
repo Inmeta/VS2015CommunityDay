@@ -12,7 +12,7 @@ namespace CSharp._2_Using_ExpressionBodies
         public CustomerCollection(Store store)
         {
             TheStore = store;
-            Names = new List<string>() {"A","B","C"};
+            Names = new List<string> {"A","B","C"};
         }
         
         public Customer this[int id] => TheStore.FindCustomer(id);
@@ -21,7 +21,7 @@ namespace CSharp._2_Using_ExpressionBodies
 
         public string FindName(string name)
         {
-            return Names.Where(x => x == name).FirstOrDefault();
+            return Names.FirstOrDefault(x => x == name);
         }
 
     }
@@ -36,7 +36,7 @@ namespace CSharp._2_Using_ExpressionBodies
             Id = id;
         }
 
-        public string Identification => "Kundeno: \{Id}  " + Name;
+        public string Identification => $"Kundeno: {Id}  " + Name;
 
     }
 

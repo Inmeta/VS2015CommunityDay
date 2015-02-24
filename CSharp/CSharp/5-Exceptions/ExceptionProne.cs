@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Console;
 
 namespace CSharp
 {
@@ -21,7 +20,7 @@ namespace CSharp
             {
                 if (e.Topic >= 42)
                 {
-                    WriteLine("Boom");
+	                Console.WriteLine("Boom");
                 }
                 else
                     throw;
@@ -38,9 +37,9 @@ namespace CSharp
             {
                 throw new WeirdException(x);
             }
-            catch (WeirdException e) if (e.Topic>=42)
+            catch (WeirdException e)  when (e.Topic>=42)
             {
-                WriteLine("Boom");
+	            Console.WriteLine("Boom");
             }
         }
     }

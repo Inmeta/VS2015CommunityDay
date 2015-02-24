@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Console;
+using static System.Console;
 
 namespace CSharp
 {
@@ -17,6 +17,6 @@ namespace CSharp
 
         public static Triangle operator+(Triangle a, Triangle b) => a.Change(b);
 
-        public void Write() => WriteLine("X=\{X}, Y=\{Y}, Hyp=\{Hypotenuse}");
+        public void Write() => WriteLine($"X={X}, Y={Y}, Hyp={Hypotenuse}");
     }
 }

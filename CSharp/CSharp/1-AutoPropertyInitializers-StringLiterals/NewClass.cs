@@ -14,7 +14,7 @@ namespace CSharp
         {
             Y = y;
         }
-        public string Information => "On \{SomeDate} there is \{ListOfInts.Count()} elements";
+        public string Information => $"On {SomeDate} there is {ListOfInts.Count()} elements";
         
     }
 

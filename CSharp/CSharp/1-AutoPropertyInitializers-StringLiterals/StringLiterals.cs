@@ -31,8 +31,8 @@ namespace CSharp
 
         public StringLiterals()
         {
-            WhatIsTheMessage = "The answer to it all is \{answer}, coined by \{FirstName} \{LastName} in his book \{Book.Title}";
-            AndWhen = "Said the \{DateTime.Now : dd}st of the month \{DateTime.Now : MMMM} ";
+            WhatIsTheMessage = $"The answer to it all is {answer}, coined by {FirstName} {LastName} in his book {Book.Title}";
+            AndWhen = $"Said the {DateTime.Now : dd}st of the month {DateTime.Now : MMMM} ";
         }
     }
 }

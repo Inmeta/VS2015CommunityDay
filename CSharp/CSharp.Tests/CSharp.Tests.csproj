@@ -53,6 +53,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1-AutoPropertiesTest.cs" />
     <Compile Include="CourseTest.ChangeTo.g.cs">
       <DependentUpon>CourseTest.cs</DependentUpon>
     </Compile>
